@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.choice-section{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('bg.jpg');
+    background-size: 100% 100%;
+    background-position: top center;
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.choice-section>h1{
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 0px 11px 3px rgba(0,0,0,0.4);
+}
+
+.btn-section{
+    height: 12vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.btn-section>button{
+    height: 8vh;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-section>button:hover{
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.8);
+    color: #323232;
+}
+
+.btn-section>button:nth-child(1){
+    border-radius: 20px 3px 20px 3px;
+}
+
+.btn-section>button:nth-child(1):hover{
+    border-radius: 3px 20px 3px 20px;
+}
+
+.btn-section>button:nth-child(3){
+    border-radius: 3px 20px 3px 20px;
+}
+
+.btn-section>button:nth-child(3):hover{
+    border-radius: 20px 3px 20px 3px;
+}
+
+.form-section{
+    height: 35vh;
+    width: 50vw;
+    position: relative;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+    box-shadow: 0px 0px 1px 2px white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-section>form{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-section>form>h1{
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+}
+
+.form-section>form>button{
+    height: 8vh;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: all 0.5s;
+}
+
+.form-section>form>button:hover{
+    background-color: white;
+    color: #323232;
+    border-radius: 5px;
+}
+
+.form-section>form>input{
+   height: 8vh;
+   border-radius: 5px;
+   border: 1px solid white;
+   background-color: transparent;
+   transition: all 0.5s ease-in-out;
+   padding-left: 10px;
+   font-weight: lighter;
+   font-size: 1.1rem;
+   color: white;
+   position: relative;
+}
+
+.form-section>form>input::placeholder{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+}
+
+.form-section>form>input:focus::placeholder{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-section>form>input:focus{
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+section>header{
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    grid-template-rows: 10vh 35vh 35vh;
+    grid-template-columns: 0.90fr;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    box-shadow: 0px 0px 5px 5px rgba(233, 226, 226, 0.5);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    color: #323232;
+}
+
+.go-back{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.date-time,.go-back{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.current-wheather{
+    height: 20vh;
+    width: 10vw;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.weather-img>img{
+    height: 20vh;
+}
+
+.current-wheather>span{
+    color: #323232;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.temprature{
+    height: 15vh;
+    width: 13vw;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    grid-template-rows: 7vh 0.99fr;
+    grid-template-columns: 0.99fr;
+    text-align: center;
+    position: relative;
+}
+
+.current-temp>h1{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 2.1rem;
+    color: #323232;
+}
+
+.min-max-temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.min-max-temp>b{
+    font-size:1.7rem;
+    color: #323232;
+}
+
+.min-temp>h3{
+    font-weight: lighter;
+    font-size: 1.7rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.max-temp>h3{
+    font-weight: lighter;
+    font-size: 1.7rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.wind-pressure{
+    height: 18vh;
+    display: grid;
+}
+
+.wind-pressure>ul{
+    display: grid;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.wind-pressure>ul>li{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #323232;
+    font-weight: bold;
+}
+
+.wind-pressure>ul>li>span{
+    color: rgba(0,0,0,0.5);
+}
+
+.sec-row{
+    display: grid;
+    grid-template-rows: 0.99fr;
+    grid-template-columns: 0.99fr;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.sec-row>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec-row>ul>li{
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.sec-row>ul>li>img{
+    height: 12vh;
+    width: 7vw;
+}
+
+.dt-txt{
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: #323232;
+}
+
+.next-day-temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5vh;
+}
+
+.next-day-temp>h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.clear-sky-gif,.clouds-gif,.rain-gif,.snow-gif{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+}
