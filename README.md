@@ -34,4 +34,4 @@ In this project Wheather widget is develped using pure and modern HTML jQuery.
 
 please download or attach jquery file before using or opening.
 
-Please rename the file "index.php" to "index.html" to use or run it.
+# Please rename the file "index.php" to "index.html" to use or run it.
