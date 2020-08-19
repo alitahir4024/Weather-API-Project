@@ -24,7 +24,7 @@ In this project Wheather widget is develped using pure and modern HTML jQuery.
 
 ## Project Preview:
 
-(https://ali-tahir4024.github.io/Weather-API-Project/).
+(https://weather-api-app-js.herokuapp.com/).
 
 ## API used for this project.
 
