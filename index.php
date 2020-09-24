@@ -7,7 +7,7 @@
     <title>Weather-Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/d1a81d2769.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
