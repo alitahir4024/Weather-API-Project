@@ -29,7 +29,3 @@ In this project Wheather widget is develped using pure and modern HTML jQuery.
 ## API used for this project.
 
 (https://openweathermap.org/).
-
-# Note:
-
-please download or attach jquery file before using or opening.
